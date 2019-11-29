@@ -1,0 +1,7 @@
+digraph {
+	rankdir=LR
+    Root
+	Root -> Test_node [label="Boia de"];
+	Test_node -> Puppa;
+	Puppa -> Root;
+}
