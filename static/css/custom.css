@@ -1,0 +1,12 @@
+body {
+    padding-top: 50px;
+}
+
+.col {
+    height: 100%;
+}
+
+textarea {
+    height: 100%;
+    width: 100%;
+}

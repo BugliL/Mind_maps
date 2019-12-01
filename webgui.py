@@ -6,7 +6,8 @@ import random, threading, webbrowser
 app = Flask(
     __name__,
     static_folder='static',
-    template_folder='templates'
+    template_folder='templates',
+    static_url_path='',
 )
 
 
@@ -22,7 +23,8 @@ def get_free_tcp_port():
     hostname = socket.gethostname()
     ip_addr = socket.gethostbyname(hostname)
     tcp.close()
-    return ip_addr, port
+    # return ip_addr, port
+    return '192.168.178.56', 5555
 
 
 if __name__ == "__main__":
