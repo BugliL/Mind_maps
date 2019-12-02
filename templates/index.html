@@ -6,17 +6,19 @@
           crossorigin="anonymous">
 
     <link rel="stylesheet"
-          href="css/custom.css" />
+          href="css/custom.css"/>
 </header>
-<body class="container">
-<div class="row">
-    <div class="col">
-        <textarea rows="20">
-        </textarea>
+<body>
+<form class="container" method="post" action="">
+    <div class="row">
+        <div class="col offset-md-3">
+            <button type="submit" name="Save">Save</button>
+        </div>
     </div>
-    <div class="col">
-        <img src="img/graph.png" />
+    <div class="row">
+        <div class="col"><textarea name="text" rows="20">{{ text }}</textarea></div>
+        <div class="col"><img src="img/graph.png"/></div>
     </div>
-</div>
+</form>
 </body>
 </html>
